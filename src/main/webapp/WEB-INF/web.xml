@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+		 id="WebApp_ID" version="3.0">
+		 
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.do</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.do</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>CookieTest1Servlet</servlet-name>
+  	<servlet-class>com.mavenCookie.web.CookieTest1Servlet</servlet-class>
+  	<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+	</init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>CookieExtract</servlet-name>
+  	<servlet-class>com.mavenCookie.web.CookieExtract</servlet-class>
+  	<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+	</init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>CookieAllRemove</servlet-name>
+  	<servlet-class>com.mavenCookie.web.CookieAllRemove</servlet-class>
+  	<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+	</init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>CookieModify</servlet-name>
+  	<servlet-class>com.mavenCookie.web.CookieModify</servlet-class>
+  	<init-param>
+			<param-name>charset</param-name>
+			<param-value>UTF-8</param-value>
+	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CookieTest1Servlet</servlet-name>
+  	<url-pattern>/CookieTest1Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CookieExtract</servlet-name>
+  	<url-pattern>/CookieExtract</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CookieAllRemove</servlet-name>
+  	<url-pattern>/CookieAllRemove</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CookieModify</servlet-name>
+  	<url-pattern>/CookieModify</url-pattern>
+  </servlet-mapping>
+</web-app>
